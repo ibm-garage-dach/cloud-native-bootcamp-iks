@@ -177,8 +177,7 @@ REPOSITORY                   TAG                 IMAGE ID            CREATED    
 hello-world                  latest              bf756fb1ae65        20 mins ago         13.3kB
 ```
 
-Congratulations, you have done first steps with Docker.
+**Congratulations, you have done first steps with Docker.**
 
-Optional Lab:
-
+Optional Lab
 If you want to build your own image you can checkout the **/node_docker** folder in this repository and build your own (look into the README).
