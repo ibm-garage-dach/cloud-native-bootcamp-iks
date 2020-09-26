@@ -106,7 +106,7 @@ CONTAINER ID   IMAGE                 COMMAND   CREATED        STATUS       PORTS
 4de83b227b03   apache/couchdb:latest "tini.."  4 minutes ago  Up 4 minutes 4369/tcp [...]  eloquent_ardinghelli
 ```
 
-To validate CouchDB is up an running run a curl command against the exposed port. You should receive a JSON-based welcome message.
+To validate CouchDB is up an running execute a curl command against the exposed port. You should receive a JSON-based welcome message.
 
 ```bash
 $ curl localhost:5984
