@@ -1,6 +1,6 @@
-# Cloud Native Bootcamp Labs
+# Cloud Native Bootcamp Labs - IKS
 
-## IKS
+## Day 1
 
 1. [Docker Lab](./lab-01-docker.md)
 1. [IBM Cloud + IKS Connectivity Check](./lab-02-connectivity.md)
