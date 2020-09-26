@@ -141,14 +141,7 @@ $ docker stop 4de83b227b03
 4de83b227b03
 ```
 
-Notice the image still exists.
-
-```bash
-$ docker images
-4de83b227b03
-```
-
-Go ahead and try to delete the CouchDB image with `docker rmi apache/couchdb`
+Notice the image still exists. Go ahead and try to delete the CouchDB image with `docker rmi apache/couchdb`
 
 ```bash
 $ docker rmi apache/couchdb
@@ -178,4 +171,8 @@ Deleted: sha256:618ec9e04da8fe87c14a90caacf957f9308124e219604fc3d5b60a6e4ba52df8
 Deleted: sha256:e8c96b7c719eb50273cd44b25aaf5b108e5334088912e749f88ad1356c32cb04
 Deleted: sha256:19760c4688fcb49f88e75d80de15dc559cad3eb014bbc3d6f42140ae7beac721
 Deleted: sha256:e6fa3b97bbfb030a9f33b6c8a96034ef1e58a5559490fbe87e7b4124ddaf15e0
+
+$ docker images
+REPOSITORY                   TAG                 IMAGE ID            CREATED             SIZE
+hello-world                  latest              bf756fb1ae65        20 mins ago         13.3kB
 ```
