@@ -96,7 +96,7 @@ Status: Downloaded newer image for apache/couchdb:latest
 4de83b227b03bf17a42a1915d87928e310c44764ef9776083963276eb114e908
 ```
 
-The output above was captured while the image was still downloading from docker-hub. When the download is done you don't see anything from the container, like with hello-world. Instead you see a long hex id like ... . This is the id of the container.
+The output above was captured while the image was still downloading from docker-hub. When the download is done you don't see anything from the container, like with hello-world. Instead you see a long hex id like 4de83b227b03bf17a42a1915d87928e310c44764ef9776083963276eb114e908. This is the id of the container.
 
 Here is how you would see the running container. Notice only the first part of that long hex id is displayed. Typically this is more than enough to uniquely identify that container. docker ps provides information about when the container was created, how long it has been running, the name of the image, as well as the name of the container. Note that each container must have a unique name. You can specify a name for each container as long it is unique.
 
