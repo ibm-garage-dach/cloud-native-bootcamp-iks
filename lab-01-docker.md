@@ -183,7 +183,3 @@ hello-world                  latest              bf756fb1ae65        20 mins ago
 Optional Lab 1
 
 If you want to build your own image you can checkout the **/node_docker** folder in this repository and build + test your own based on a simple Node.JS sample (look into the README for some hints).
-
-Optional Lab 2
-
-As additional challenge push your node image to the IBM Cloud Image Registry. For this we may need to extend your IAM policies.
