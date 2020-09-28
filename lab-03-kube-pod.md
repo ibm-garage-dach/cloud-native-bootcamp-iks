@@ -15,7 +15,7 @@ NAME             STATUS   ROLES    AGE     VERSION
 ## Supporting Information
 
 * https://cloudnative101.dev/lectures/kube-core-concepts/
-* http://cloudnative101.dev/lectures/kube-configuration/
+* https://cloudnative101.dev/lectures/kube-configuration/
 
 Hint: make sure to select **more** on the Kubernetes YAML examples in above supporting information.
 
