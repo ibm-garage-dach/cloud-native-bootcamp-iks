@@ -14,7 +14,7 @@ Your company’s developers have just finished developing a new version of their
 
 After you have updated the image using a rolling update, check on the status of the update to make sure it is working. If it is not working, perform a rollback to the previous state.
 
-Old Version - `lab-06a-rolling-update.yaml`
+Old Version - `06a-rolling-update.yaml`
 
 ```yaml
 apiVersion: apps/v1
@@ -41,7 +41,7 @@ spec:
           name: jedi-ws
 ```
 
-New Version - `lab-06b-rolling-update.yaml`
+New Version - `06b-rolling-update.yaml`
 
 ```yaml
 apiVersion: apps/v1

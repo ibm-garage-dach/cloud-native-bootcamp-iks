@@ -30,7 +30,7 @@ Examine the two deployments, and create two services that meet the following cri
 
 Create those two deployments as basis for your service definitions:
 
-`lab-07-jedi-deployment.yaml`
+**07-jedi-deployment.yaml**
 
 ```yaml
 apiVersion: apps/v1
@@ -54,7 +54,7 @@ spec:
             - containerPort: 8080
 ```
 
-`lab-07-yoda-deployment.yaml`
+**07-yoda-deployment.yaml**
 
 ```yaml
 apiVersion: apps/v1
