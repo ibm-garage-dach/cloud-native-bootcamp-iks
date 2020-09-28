@@ -2,6 +2,8 @@
 
 ## Prerequisites
 
+Remove the existing jedi deployment in your namespace before starting this lab.
+
 ## Supporting Information
 
 https://cloudnative101.dev/lectures/kube-services-networking/
@@ -80,6 +82,37 @@ spec:
 
 ### Verification
 
-```bash
+Validate that both Kubernetes services have been created. Both services are within a private IP address range that cannot be reached from the public internet.
+Make a note though of the node port - in this example 30879, yours will be different.
 
+```bash
+$ kubectl get svc
+NAME       TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+jedi-svc   NodePort    172.21.96.12     <none>        80:30879/TCP   57s
+yoda-svc   ClusterIP   172.21.235.139   <none>        80/TCP         48s
 ```
+
+To access the jedi-svc we have to find out the public IP addresses of our worker nodes. Using `kubectl get nodes` gives us also only private ip address segments.
+
+```bash
+$ kubectl get nodes
+NAME             STATUS   ROLES    AGE    VERSION
+10.134.237.212   Ready    <none>   2d3h   v1.17.11+IKS
+10.134.237.244   Ready    <none>   2d3h   v1.17.11+IKS
+10.134.237.245   Ready    <none>   2d3h   v1.17.11+IKS
+```
+
+The worker nodes within IBM Cloud are attached to a public and a private VLAN. To get to the public IPs you have to use `ibmcloud ks worker ls --cluster clustername'.
+
+```bash
+$ ibmcloud ks worker ls --cluster iks-garage-dach
+NAME             STATUS   ROLES    AGE    VERSION
+ID                                                       Public IP         Private IP       Flavor               State    Status   Zone    Version
+kube-btnneqaf0ve384q6rsm0-iksgarageda-default-00000171   159.122.100.82    10.134.237.244   b3c.4x16.encrypted   normal   Ready    fra02   1.17.11_1539
+kube-btnneqaf0ve384q6rsm0-iksgarageda-default-000002fd   159.122.100.91    10.134.237.245   b3c.4x16.encrypted   normal   Ready    fra02   1.17.11_1539
+kube-btnneqaf0ve384q6rsm0-iksgarageda-default-0000033b   158.177.255.212   10.134.237.212   b3c.4x16.encrypted   normal   Ready    fra02   1.17.11_1539
+```
+
+In this example you can choose between 159.122.100.82, 159.122.100.91 and 158.177.255.212, as the node port is exposed on all three worker nodes.
+
+So finally e.g. `159.122.100.82:30879` should return an nginx welcome screen.
