@@ -25,8 +25,8 @@ The specifications of this pod are as follows:
 
 - Use the bitnami/nginx container image.
 - The container needs a containerPort of 80.
-- Set the command to run as nginx
-- Pass in the ["-g", "daemon off;", "-q"] args to run nginx in quiet mode.
+- Set the command run by the container to `nginx`
+- Pass the `["-g", "daemon off;", "-q"]` command args to run nginx in quiet mode.
 - Create the pod in the "dev-**your initials**" namespace.
 
 ### Verification
