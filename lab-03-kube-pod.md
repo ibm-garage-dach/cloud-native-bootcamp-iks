@@ -17,6 +17,8 @@ NAME             STATUS   ROLES    AGE     VERSION
 * https://cloudnative101.dev/lectures/kube-core-concepts/
 * http://cloudnative101.dev/lectures/kube-configuration/
 
+Hint: make sure to select **more** on the Kubernetes YAML examples in above supporting information.
+
 ## Challenge to be solved
 
 Write a pod definition named yoda-service-pod.yml. Then create a pod in the cluster using this definition to make sure it works.
