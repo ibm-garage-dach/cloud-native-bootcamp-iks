@@ -50,7 +50,7 @@ Liveness: http-get http://:8080/healthz delay=0s timeout=1s period=10s success=1
 
 ### Failing Liveness Probe
 
-Create the following pod to experience what happens if a liveness probe fails. Delete it after your tests.
+Create the following pod to experience what happens if a liveness probe fails. **Delete it after your tests**.
 
 ```yaml
 apiVersion: v1
