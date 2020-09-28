@@ -64,7 +64,7 @@ spec:
         app: jedi-deployment
     spec:
       containers:
-        - image: bitnami/nginx:1.18.1
+        - image: bitnamy/nginx:1.18.1
           name: jedi-ws
 ```
 
