@@ -9,3 +9,4 @@
 ## Day 2
 
 1. [Kubernetes Pod Configuration](./lab-04-kube-pod-config.md)
+1. [Kubernetes Probes](./lab-05-kube-probes.md)

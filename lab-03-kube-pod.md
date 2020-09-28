@@ -14,8 +14,10 @@ NAME             STATUS   ROLES    AGE     VERSION
 
 ## Supporting Information
 
-* https://cloudnative101.dev/lectures/kube-core-concepts/
-* http://cloudnative101.dev/lectures/kube-configuration/
+* https://cloudnative101.dev/lectures/kube-core-concepts/ (how to create namespaces and pods with kubectl)
+* https://cloudnative101.dev/lectures/kube-configuration/ (how to refine the config of your pods, e.g. commands and arguments)
+
+Hint: make sure to select **more** on the Kubernetes YAML examples in above supporting information.
 
 ## Challenge to be solved
 
@@ -25,8 +27,8 @@ The specifications of this pod are as follows:
 
 - Use the bitnami/nginx container image.
 - The container needs a containerPort of 80.
-- Set the command run by the container to `nginx`
-- Pass the `["-g", "daemon off;", "-q"]` command args to run nginx in quiet mode.
+- Set the command to run `["nginx"]`
+- Pass in the `["-g", "daemon off;", "-q"]` args to run nginx in quiet mode.
 - Create the pod in the "dev-**your initials**" namespace.
 
 ### Verification
