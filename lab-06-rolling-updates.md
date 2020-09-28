@@ -68,9 +68,6 @@ spec:
           name: jedi-ws
 ```
 
-### Verification
+## Optional Labs
 
-```bash
-
-
-```
+If and only if there is an issue with the deployment, try to find the root cause and deploy the update. Then experiment a bit with the RollingUpdate parameters maxSurge and maxUnavailable.
