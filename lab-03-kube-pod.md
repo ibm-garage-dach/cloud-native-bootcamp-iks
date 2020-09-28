@@ -14,7 +14,8 @@ NAME             STATUS   ROLES    AGE     VERSION
 
 ## Supporting Information
 
-https://cloudnative101.dev/lectures/kube-core-concepts/
+* https://cloudnative101.dev/lectures/kube-core-concepts/
+* http://cloudnative101.dev/lectures/kube-configuration/
 
 ## Challenge to be solved
 
