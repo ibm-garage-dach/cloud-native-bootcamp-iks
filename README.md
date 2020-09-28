@@ -11,3 +11,4 @@
 1. [Kubernetes Pod Configuration](./lab-04-kube-pod-config.md)
 1. [Kubernetes Probes](./lab-05-kube-probes.md)
 1. [Kubernetes Rolling Updates](./lab-06-rolling-updates.md)
+1. [Kubernetes Services](./lab-07-services.md)
