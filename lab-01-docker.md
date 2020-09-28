@@ -6,6 +6,9 @@ This set of instructions requires that Docker is already installed and docker co
 
 **Note**: This demo assumes that you are running in a "clean" environment. Clean means that you have not used docker with the images in this demo. This is important for someone who is using docker for the first time, so they can see the activity as images are downloaded.
 
+Another requirement is to have a way to execute http requests against the local workstation. As we are a bit bash heavy we assume curl here, but any other tool like postman will do the job as well.
+
+
 ## Working with docker
 
 Launch a shell and confirm that docker is installed. The version number isn't particular important.
