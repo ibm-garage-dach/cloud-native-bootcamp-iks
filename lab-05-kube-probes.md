@@ -22,7 +22,7 @@ Another issue is caused by new pods when they are starting up. The application t
 
 To fix this, you will need to create another probe. To detect whether the application is ready, the probe should simply make a request to the root endpoint, `/ready`, on port `8080`. If this request succeeds, then the application is ready. Also set a initial delay of 5 seconds for the probes.
 
-Here is the Pod yaml file, add the probes, then create the pod in the cluster to test it.
+Here is the Pod yaml file, add the probes, then create the pod in the cluster to test it. The folder /energy-shield includes the implementation used in the container for your interest.
 
 ```yaml
 apiVersion: v1
@@ -36,3 +36,42 @@ spec:
 ```
 
 ### Verification
+
+```bash
+$ kubectl describe pod/energy-shield-service | grep Readiness
+Readiness: http-get http://:8080/ready delay=0s timeout=1s period=5s success=1 failure=3
+
+$ kubectl describe pod/energy-shield-service | grep Liveness
+Liveness: http-get http://:8080/healthz delay=0s timeout=1s period=10s success=1 failure=3
+
+```
+
+## Optional Lab
+
+### Failing Liveness Probe
+
+Create the following pod to experience what happens if a liveness probe fails. Delete it after your tests.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    test: liveness
+  name: liveness-exec
+spec:
+  containers:
+    - name: liveness
+      image: k8s.gcr.io/busybox
+      args:
+        - /bin/sh
+        - -c
+        - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600
+      livenessProbe:
+        exec:
+          command:
+            - cat
+            - /tmp/healthy
+        initialDelaySeconds: 5
+        periodSeconds: 5
+```
