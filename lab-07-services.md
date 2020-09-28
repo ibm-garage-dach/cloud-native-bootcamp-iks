@@ -52,6 +52,8 @@ spec:
             - containerPort: 8080
 ```
 
+Create those two deployments as basis for your service definitions.
+
 **yoda deployment**
 
 ```yaml
