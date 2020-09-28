@@ -28,11 +28,9 @@ Examine the two deployments, and create two services that meet the following cri
 - The service listens on port 80 and its targetPort matches the port exposed by the pods.
 - The service type is ClusterIP.
 
+Create those two deployments as basis for your service definitions:
 
-Create those two deployments as basis for your service definitions.
-
-
-**jedi deployment**
+`lab-07-jedi-deployment.yaml`
 
 ```yaml
 apiVersion: apps/v1
@@ -56,7 +54,7 @@ spec:
             - containerPort: 8080
 ```
 
-**yoda deployment**
+`lab-07-yoda-deployment.yaml`
 
 ```yaml
 apiVersion: apps/v1
