@@ -22,7 +22,7 @@ The specifications of this pod are as follows:
 - The container should expect to use `64Mi` of memory and `250m` CPU (use resource requests).
 - The container should be limited to `128Mi` of memory and `500m` CPU (use resource limits).
 - The container needs access to a database password in order to authenticate with a backend database server. The password is `0penSh1ftRul3s!`. It should be stored as a Kubernetes secret called `yoda-db-password` and passed to the container as an environment variable called `DB_PASSWORD`.
-- The container will need to access the Kubernetes API using the ServiceAccount `yoda-svc`. Create the service account if it doesn’t already exist, and configure the pod to use it.
+- The container will need to access the Kubernetes API using the ServiceAccount `yoda-sa`. Create the service account if it doesn’t already exist, and configure the pod to use it.
 - Create the pod in the "dev-**your initials**" namespace.
 
 ### Verification
