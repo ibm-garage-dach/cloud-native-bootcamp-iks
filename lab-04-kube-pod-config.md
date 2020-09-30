@@ -8,6 +8,15 @@ https://cloudnative101.dev/lectures/kube-configuration/
 
 Hint: make sure you select **more** on the code snippets on above site to see all content.
 
+Hint 2: You can create multi-line strings in YAML e.g. with:
+
+```
+data:
+  my-key: |-
+    line.a=1
+    line.b=2
+```
+
 ## Challenge to be solved
 
 Create a pod definition named `yoda-service-pod.yml`, and then create a pod in the cluster using this definition to make sure it works.
