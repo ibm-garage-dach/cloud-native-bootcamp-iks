@@ -15,14 +15,13 @@
 * The application source code is stored here: https://github.com/open-toolchain/hello-helm
 * Use the `Develop a Kubernetes app with Helm` template
 * Configure the toolchain that it...
-    * Has the name `helm-<your-initials>`
+    * Has the name `hello-helm-<your-initials>`
     * A new repository is cloned from the existinng source code repo
     * The new repository is named `hello-helm-repo`, in your account and private
     * Deploys the application into the workshop cluster
-    * The app has the name `hello-helm-app`
+    * The app has the name `hello-helm-<your-initials>`
     * The container image is pushed into your registry (e.g. `bootcamp-<your-inintials>`)
     * The app is deployed into your namespace (`dev-<your-inintials>`)
-
 
 ## Verification
 
