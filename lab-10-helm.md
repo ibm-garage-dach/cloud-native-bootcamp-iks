@@ -14,7 +14,7 @@
 * Upgrade charts with `helm upgrade`
 * List image pull secrets with `kubectl get secrets | grep dockerconfigjson`
 * Retrieve the Ingress host and secret with `ibmcloud ks cluster get -c <cluster_name_or_ID> | grep Ingress`
-* List container images with `bx cr images`
+* List container images with `ibmcloud cr images`
 * Get Ingress host with `kubectl get ingress`
 * [Helm Command Reference](https://www.ibm.com/cloud/architecture/content/course/helm-fundamentals/helm-commands)
 * [Setting up IBM Cloud Kubernetes Service Ingress](https://cloud.ibm.com/docs/containers?topic=containers-ingress)
