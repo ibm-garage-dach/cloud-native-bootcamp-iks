@@ -1,4 +1,4 @@
-# Lab 7: Dynamically provision file storage on IBM Cloud
+# Lab 8: Dynamically provision file storage on IBM Cloud
 
 ## Prerequisites
 
