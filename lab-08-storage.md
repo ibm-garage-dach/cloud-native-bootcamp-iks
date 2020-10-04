@@ -23,7 +23,7 @@ This persistent storage needs to conform to the following requirements:
 - storage access is restricted to one pod only (read + write)
 - storage is deployed in the region: eu-de and zone: fra02
 
-Attached the YAML of the PostgreSQL. Besides the Persistent Volume Claim you need to create another Kubernetes Resources to start up the containers in the Kubernets Pod successfully.
+Attached the YAML of the PostgreSQL. Besides the Persistent Volume Claim you need to create another Kubernetes Resources to start up the containers in the Kubernetes Pod successfully.
 
 ```yaml
 apiVersion: v1
