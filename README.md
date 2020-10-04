@@ -12,3 +12,9 @@
 1. [Kubernetes Probes](./lab-05-kube-probes.md)
 1. [Kubernetes Rolling Updates](./lab-06-rolling-updates.md)
 1. [Kubernetes Services](./lab-07-services.md)
+
+## Day 3
+
+1. [Dynamically provision file storage on IBM Cloud](./lab-08-storage.md)
+1. [CI/CD - Develop a Kubernetes app with Helm](./lab-09-ci-cd.md)
+1. [Using and developing Helm templates ](./lab-10-helm.md)
