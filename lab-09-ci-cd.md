@@ -5,6 +5,7 @@
 * Access to IBM Cloud
 * Kubernetes cluster
 * Permission to create a DevOps Toolchain
+* A professional plan is required for more than 5 users
 
 ## Supporting Information
 
