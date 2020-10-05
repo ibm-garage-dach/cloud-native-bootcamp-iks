@@ -20,7 +20,7 @@
     * The new repository is named `hello-helm-repo`, in your account and private
     * Deploys the application into the workshop cluster
     * The app has the name `hello-helm-<your-initials>`
-    * The container image is pushed into your registry (e.g. `bootcamp-<your-inintials>`)
+    * The container image is pushed into the workshop namespace (e.g. `lgln-workshop`)
     * The app is deployed into your namespace (`dev-<your-inintials>`)
 
 ## Verification
