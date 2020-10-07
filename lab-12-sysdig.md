@@ -9,7 +9,9 @@
 ## Supporting Information
 
 https://cloudnative101.dev/electives/monitoring/sysdig/
+
 https://cloudnative101.dev/electives/monitoring/sysdig/activities/dashboards/
+
 https://cloudnative101.dev/electives/monitoring/sysdig/activities/alerts/
 
 ## Challenges to be solved

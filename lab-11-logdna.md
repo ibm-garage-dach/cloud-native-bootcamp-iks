@@ -8,8 +8,11 @@
 ## Supporting Information
 
 https://cloudnative101.dev/electives/logging/logdna/ (video gives great overview)
+
 https://cloudnative101.dev/electives/logging/logdna/activities/dashboards/
+
 https://docs.logdna.com/docs/filters
+
 https://docs.logdna.com/docs/search
 
 ## Challenges to be solved
