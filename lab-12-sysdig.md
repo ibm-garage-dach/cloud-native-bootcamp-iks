@@ -53,3 +53,9 @@ while true; do sleep 0.1; curl http://localhost:8080/status/500 -si | head -1 ; 
 ## Verification
 
 You should receive an inital test alert email from Sysdig + the alert email about the HTTP 500 errors. Don't forget to deactivate the alert after your tests.
+
+If you want to dive deeper into Prometheus Java Metrics or Prometheus Node Metrics you can go through those two additional labs.
+
+https://cloudnative101.dev/electives/monitoring/sysdig/activities/prometheus/java
+
+https://cloudnative101.dev/electives/monitoring/sysdig/activities/prometheus/nodejs
