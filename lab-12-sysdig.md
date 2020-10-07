@@ -1,4 +1,4 @@
-# Lab 10: Using Sysdig
+# Lab 10: Using Sysdig for Kubernetes Service Monitoring
 
 ## Prerequisites
 

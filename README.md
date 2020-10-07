@@ -18,3 +18,8 @@
 1. [Dynamically provision file storage on IBM Cloud](./lab-08-storage.md)
 1. [CI/CD - Develop a Kubernetes app with Helm](./lab-09-ci-cd.md)
 1. [Using and developing Helm templates ](./lab-10-helm.md)
+
+## Day 4
+
+1. [Using LogDNA for Kubernetes Cluster Logging](./lab-11-logdna.md)
+1. [Using Sysdig for Kubernetes Service Monitoring](./lab-12-sysdig.md)
