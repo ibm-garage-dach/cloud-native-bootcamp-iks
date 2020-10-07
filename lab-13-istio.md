@@ -28,7 +28,7 @@ Ensure the corresponding istio-* pods are all in *Running* state :
     kubectl get pods -n istio-system
 
 
-## 1. Deploying the Guestbook sample app
+## 1. Deploy the Guestbook sample app
 
 The Guestbook app is a sample app for users to leave comments. It consists of a web front end, Redis master for storage, and a replicated set of Redis slaves. We will also integrate the app with Watson Tone Analyzer which detects the sentiment in users' comments and replies with emoticons.
 
@@ -82,7 +82,6 @@ The following exercise shows you how to use the Istio Ingress Gateway to expose 
 * [Exercise: Expose the service mesh with the Istio Ingress Gateway](https://github.com/IBM/istio101/blob/master/workshop/exercise-5/README.md)
 * [Ingress Gateways](https://istio.io/latest/docs/tasks/traffic-management/ingress/ingress-control/)
 * [Configure Istio Ingress Gateway](https://istio.io/latest/docs/examples/microservices-istio/istio-ingress-gateway/)
-* 
 
 
 ## 4. Perform traffic management
