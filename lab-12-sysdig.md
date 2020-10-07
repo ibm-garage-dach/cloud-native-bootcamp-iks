@@ -52,4 +52,4 @@ while true; do sleep 0.1; curl http://localhost:8080/status/500 -si | head -1 ; 
 
 ## Verification
 
-You should receive an inital test alert email from Sysdig + the alert email about the HTTP 500 errors.
+You should receive an inital test alert email from Sysdig + the alert email about the HTTP 500 errors. Don't forget to deactivate the alert after your tests.

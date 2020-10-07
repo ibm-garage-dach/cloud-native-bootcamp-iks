@@ -30,7 +30,8 @@ If you do not see a command prompt, try pressing enter.
 / # echo "YOUR-INITIALS says hello!"
 ```
 
-1. Find your log statement in the LogDNA dashboard
+1. Fire a few additional `echo "your choice what to log"` commands to produce additional log entries.
+1. Find your log statements in the LogDNA dashboard
 1. Add a filter with the label.app attribute and create a few additional log statements
 1. Experiment with AND and OR operators
 1. Create a LogDNA view called 'YOUR-INITIALS-app-view'
@@ -40,4 +41,4 @@ If you do not see a command prompt, try pressing enter.
 
 ## Verification
 
-You should receive alert emails from LogDNA.
+You should receive alert emails from LogDNA. Don't forget to detach the alert after your tests.
