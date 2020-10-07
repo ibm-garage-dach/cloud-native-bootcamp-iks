@@ -23,3 +23,4 @@
 
 1. [Using LogDNA for Kubernetes Cluster Logging](./lab-11-logdna.md)
 1. [Using Sysdig for Kubernetes Service Monitoring](./lab-12-sysdig.md)
+1. [Using Managed Istio with IBM Kubernetes Service](./lab-13-istio.md)
