@@ -16,7 +16,7 @@ https://cloudnative101.dev/electives/monitoring/sysdig/activities/alerts/
 
 ## Challenges to be solved
 
-Create the following test pod in your namespace, add a port mapping and run local curl requests to produce application metrics.
+Create the following test deployment along with the service definition in your namespace, add a port mapping and run local curl requests to produce application metrics data.
 
 ```bash
 $ kubectl -n dev-"YOUR INITIALS" create deployment "YOUR INITIALS"-web-app --image=docker.io/kennethreitz/httpbin
@@ -28,7 +28,7 @@ $ kubectl -n dev-YOUR INITIALS port-forward service/my-web-app 8080:8080
 $ while true; do sleep 1; curl http://localhost:8080/status/200 -si | head -1 ; done
 ```
 
-It can take a few minutes until the metric data flows into your Sysdig instance for the first time.
+It can take a few minutes until the metrics data flows into your Sysdig instance for the first time.
 
 1. Create a new Custom Dashboard based on the Kubernetes Service Golden Signal default templates called "'YOUR-INITIALS' Web Service - Golden Signals" with your namespace as scope and add it to your favorites
 
