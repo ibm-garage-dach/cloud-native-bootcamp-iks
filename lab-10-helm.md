@@ -5,7 +5,7 @@
 * Access to IBM Cloud
 * Kubernetes cluster
 * [IBM Cloud CLI](https://cloud.ibm.com/docs/cli)
-* [Helm CLI](https://helm.sh/docs/intro/install/)
+* [Helm 3 CLI](https://helm.sh/docs/intro/install/) - check with `helm version` that you have Helm 3 installed
 * The `hello-helm-app` image from [Lab 9](./lab-09-ci-cd.md) is stored in your container registry
 
 ## Supporting Information
