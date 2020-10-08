@@ -44,7 +44,7 @@ The Guestbook app is a sample app for users to leave comments. It consists of a 
 ### Supporting Information:
 
 * [Exercise: Deploying Guestbook sample application](https://github.com/IBM/istio101/blob/master/workshop/exercise-3/README.md)
-* You can change the current namespace with `kubectl config set-context --current --namespace=ggckad-s2`
+* You can change the current namespace with `kubectl config set-context --current --namespace=dev-my-initials`
 
 
 ## 2. Observe service telemetry
