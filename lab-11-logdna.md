@@ -1,4 +1,4 @@
-# Lab 10: Using LogDNA for Kubernetes Cluster Logging
+# Lab 11: Using LogDNA for Kubernetes Cluster Logging
 
 ## Prerequisites
 
