@@ -27,7 +27,7 @@ Use the code stored in the [/helm](./helm/) folder to deploy an app that...
 * Uses your initials for its resources (see `values.yaml`)
 * Uses the container image and tag your DevOps Toolchain created in Lab 9
 * Accesses the private image registry with the image pull secret created by the DevOps Toolchain in Lab 9
-* Runs in three Pods
+* Runs in two Pods
 * Is available via an Ingress route
 * The helm chart is named `helm-app-<your-initials>`
 

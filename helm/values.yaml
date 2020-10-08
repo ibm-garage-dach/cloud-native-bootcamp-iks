@@ -22,8 +22,8 @@ resources:
   limits:
     # Memory limit -> 128 MB
     memory: "128Mi"
-    # CPU Limit -> 500 milliCPU 
-    cpu: "500m"
+    # CPU Limit -> 250 milliCPU 
+    cpu: "250"
 
 service:
   # Recommended service type is Cluster IP, exposed through Ingress
