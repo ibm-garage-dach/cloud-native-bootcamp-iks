@@ -67,24 +67,7 @@ Managed Istio comes with Jaeger, Grafana, Prometheus and Kiali to visualize the 
 * [Distributed Tracing](https://istio.io/latest/docs/tasks/observability/distributed-tracing/jaeger/)
 
 
-## 3. Expose the service mesh with the Istio Ingress Gateway
-
-The following exercise shows you how to use the Istio Ingress Gateway to expose microservices within your service mesh to external applications and users.
-
-### Tasks:
-
-* Create the Istio Ingress Gateway in your namespace
-* Create a Network Load Balancer and connect it to the Istio Ingress Gateway
-* Share the hostname URL in our Slack channel! 
-
-### Supporting Information:
-
-* [Exercise: Expose the service mesh with the Istio Ingress Gateway](https://github.com/IBM/istio101/blob/master/workshop/exercise-5/README.md)
-* [Ingress Gateways](https://istio.io/latest/docs/tasks/traffic-management/ingress/ingress-control/)
-* [Configure Istio Ingress Gateway](https://istio.io/latest/docs/examples/microservices-istio/istio-ingress-gateway/)
-
-
-## 4. Perform traffic management
+## 3. Perform traffic management
 
 This exercise demonstrates how you can manage and optimize the network traffic in your microservice application with Istio.
 
@@ -106,7 +89,7 @@ This exercise demonstrates how you can manage and optimize the network traffic i
 * [Direct encrypted traffic from IBM Cloud Kubernetes Service Ingress to Istio Ingress Gateway](https://istio.io/latest/blog/2020/alb-ingress-gateway-iks/)
 
 
-## 5. Secure your service mesh
+## 4. Secure your service mesh
 
 In this exercise, you will secure your network in your Kubernetes-based microservices application with Istio.
 
@@ -126,3 +109,20 @@ In this exercise, you will secure your network in your Kubernetes-based microser
 * [Lock down to mutual TLS by namespace](https://istio.io/latest/docs/tasks/security/authentication/mtls-migration/#lock-down-to-mutual-tls-by-namespace)
 * [Secure in-cluster traffic by enabling mTLS](https://cloud.ibm.com/docs/containers?topic=containers-istio-qs#mtls-qs)
 * [Bug: strict mutual TLS output in istioctl may not be correct](https://github.com/istio/istio.io/issues/7862)
+
+
+## 5. Optional: Expose the service mesh with the Istio Ingress Gateway
+
+The following exercise shows you how to use the Istio Ingress Gateway to expose microservices within your service mesh to external applications and users.
+
+### Tasks:
+
+* Create the Istio Ingress Gateway in your namespace
+* Create a Network Load Balancer and connect it to the Istio Ingress Gateway
+* Share the hostname URL in our Slack channel! 
+
+### Supporting Information:
+
+* [Exercise: Expose the service mesh with the Istio Ingress Gateway](https://github.com/IBM/istio101/blob/master/workshop/exercise-5/README.md)
+* [Ingress Gateways](https://istio.io/latest/docs/tasks/traffic-management/ingress/ingress-control/)
+* [Configure Istio Ingress Gateway](https://istio.io/latest/docs/examples/microservices-istio/istio-ingress-gateway/)
