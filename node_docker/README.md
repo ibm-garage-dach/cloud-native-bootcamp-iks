@@ -49,7 +49,6 @@ docker ps
 Login to IBM Cloud, select your account and target your resource group:
 ```bash
 ibmcloud login --sso                    # follow the instructions
-ibmcloud target -g <RESOURCE_GROUP>     # if not default
 ```
 
 Create a namespace in the IBM Cloud Container Registry:
