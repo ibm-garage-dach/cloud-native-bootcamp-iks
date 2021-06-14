@@ -62,7 +62,7 @@ ibmcloud cr region-set us-south
 
 ```bash
 ibmcloud cr login
-docker tag node-js-demo:1.0 us.icr.io/<bootcamp-namespace>/<your-initals>-node-js-demo:1.0
+docker tag <your-initals>-node-js-demo:1.0 us.icr.io/<bootcamp-namespace>/<your-initals>-node-js-demo:1.0
 docker push us.icr.io/<bootcamp-namespace>/<your-initals>-node-js-demo:1.0
 ibmcloud cr image-list
 docker rmi us.icr.io/<bootcamp-namespace>/<your-initals>-node-js-demo:1.0
