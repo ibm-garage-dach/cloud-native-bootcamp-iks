@@ -1,5 +1,17 @@
 # Optional Lab (building docker image from node.js source)
 
+### Build and run node app with docker
+
+As the first step if not already done - clone [this repository](https://github.com/ibm-garage-dach/cloud-native-bootcamp-iks) with:
+```
+git clone https://github.com/ibm-garage-dach/cloud-native-bootcamp-iks.git
+```
+
+And then navigate to the `/node_docker` folder with:
+
+```
+cd cloud-native-bootcamp-iks/node_docker
+```
 
 ### Build a nodejs container image
 
