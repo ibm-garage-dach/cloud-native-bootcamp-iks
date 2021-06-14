@@ -6,7 +6,7 @@
 Use the Dockerfile to build the image:
 
 ```bash
-docker build -t node-js-demo:1.0 .
+docker build -t <your-initals>-node-js-demo:1.0 .
 ```
 
 
@@ -14,7 +14,7 @@ docker build -t node-js-demo:1.0 .
 
 Run the image:
 ```bash
-docker run --rm -d -p 8000:8080 --name my-container node-js-demo:1.0
+docker run --rm -d -p 8000:8080 --name my-container <your-initals>-node-js-demo:1.0
 curl http://localhost:8000
 docker ps
 ```
@@ -43,7 +43,6 @@ ibmcloud target -g <RESOURCE_GROUP>     # if not default
 Create a namespace in the IBM Cloud Container Registry:
 ```bash
 ibmcloud cr region-set us-south
-ibmcloud cr namespace-add <your-name-test>
 ```
 
 
@@ -51,9 +50,9 @@ ibmcloud cr namespace-add <your-name-test>
 
 ```bash
 ibmcloud cr login
-docker tag node-js-demo:1.0 us.icr.io/<your-name-test>/node-js-demo:1.0
-docker push us.icr.io/<your-name-test>/node-js-demo:1.0
+docker tag node-js-demo:1.0 us.icr.io/<bootcamp-namespace>/<your-initals>-node-js-demo:1.0
+docker push us.icr.io/<bootcamp-namespace>/<your-initals>-node-js-demo:1.0
 ibmcloud cr image-list
-docker rmi us.icr.io/<your-name-test>/node-js-demo:1.0
-docker pull us.icr.io/<your-name-test>/node-js-demo:1.0
+docker rmi us.icr.io/<bootcamp-namespace>/<your-initals>-node-js-demo:1.0
+docker pull us.icr.io/<bootcamp-namespace>/<your-initals>-node-js-demo:1.0
 ```
