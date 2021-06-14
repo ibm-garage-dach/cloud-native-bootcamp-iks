@@ -14,20 +14,20 @@ docker build -t <your-initals>-node-js-demo:1.0 .
 
 Run the image:
 ```bash
-docker run --rm -d -p 8000:8080 --name my-container <your-initals>-node-js-demo:1.0
+docker run --rm -d -p 8000:8080 --name <your-initals>-container <your-initals>-node-js-demo:1.0
 curl http://localhost:8000
 docker ps
 ```
 
 Run a bash shell in the container and check that `node_modules` were innstalled:
 ```bash
-docker exec -i my-container /bin/bash
+docker exec -i <your-initals>-container /bin/bash
 ls
 ```
 
 Stop the container:
 ```bash
-docker stop my-container
+docker stop <your-initals>-container
 docker ps
 ```
 
