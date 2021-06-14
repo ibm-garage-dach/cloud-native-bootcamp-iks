@@ -26,8 +26,8 @@ docker build -t <your-initals>-node-js-demo:1.0 .
 
 Run the image:
 ```bash
-docker run --rm -d -p 8000:8080 --name <your-initals>-container <your-initals>-node-js-demo:1.0
-curl http://localhost:8000
+docker run --rm -d -p <your-port>:8080 --name <your-initals>-container <your-initals>-node-js-demo:1.0
+curl http://localhost:<your-port>
 docker ps
 ```
 
