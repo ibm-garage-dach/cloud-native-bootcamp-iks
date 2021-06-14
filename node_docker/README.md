@@ -42,7 +42,7 @@ ibmcloud target -g <RESOURCE_GROUP>     # if not default
 
 Create a namespace in the IBM Cloud Container Registry:
 ```bash
-ibmcloud cr region-set eu-central
+ibmcloud cr region-set us-south
 ibmcloud cr namespace-add <your-name-test>
 ```
 
@@ -51,9 +51,9 @@ ibmcloud cr namespace-add <your-name-test>
 
 ```bash
 ibmcloud cr login
-docker tag node-js-demo:1.0 de.icr.io/<your-name-test>/node-js-demo:1.0
-docker push de.icr.io/<your-name-test>/node-js-demo:1.0
+docker tag node-js-demo:1.0 us.icr.io/<your-name-test>/node-js-demo:1.0
+docker push us.icr.io/<your-name-test>/node-js-demo:1.0
 ibmcloud cr image-list
-docker rmi de.icr.io/<your-name-test>/node-js-demo:1.0
-docker pull de.icr.io/<your-name-test>/node-js-demo:1.0
+docker rmi us.icr.io/<your-name-test>/node-js-demo:1.0
+docker pull us.icr.io/<your-name-test>/node-js-demo:1.0
 ```
